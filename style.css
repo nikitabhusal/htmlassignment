@@ -95,11 +95,11 @@ tails-card {
   padding: 10px 5px;
   line-height: 0;
 }
-.card-desc {
+.card-body {
   padding: 1.25rem;
 }
 
-.card-desc h3 {
+.card-body h3 {
   color: #000000;
   font-weight: 600;
   font-size: 1.3em;
@@ -109,7 +109,7 @@ tails-card {
   padding: 0;
 }
 
-.card-desc p {
+.card-body p {
   color: #747373;
   font-size: 14px;
   font-weight: 400;
@@ -121,10 +121,10 @@ tails-card {
   font-family: "Raleway", sans-serif;
 }
 
-.card-desc a {
+.card-body a {
   font-weight: bold;
 }
-.card-desc .btn-card {
+.card-body .btn-card {
   background-color: #00004d;
   color: #fff;
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
