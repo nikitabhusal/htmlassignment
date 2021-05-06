@@ -164,6 +164,9 @@ a.btn-card {
   display: block;
 }
 
+.services a {
+  color: #b3b3ff;
+}
 .sidenav a:hover {
   color: #e68a00;
 }
