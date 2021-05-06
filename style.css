@@ -163,7 +163,12 @@ a.btn-card {
   color: white;
   display: block;
 }
-
+.icon-group {
+  padding: 0px;
+}
+.arrow {
+  padding: 0px 0px 0px 40px;
+}
 .services a {
   color: #b3b3ff;
 }
