@@ -8,6 +8,12 @@ body {
   font-family: 'Quicksand', sans-serif;
 }
 
+.main {
+  width: 100%;
+  max-width: 1070px;
+  margin: 0 auto;
+}
+
 /*top nav menu*/
 ul {
   list-style-type: none;
