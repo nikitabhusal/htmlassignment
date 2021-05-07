@@ -295,3 +295,14 @@ a.btn-card {
   border: 1.2px solid #212427;
   border-radius: unset;
 }
+
+@media (max-width:600px) {
+  .c-sidebar {
+    width: 0;
+    display: none;
+  }
+
+  .c-wrapper {
+    margin-left: auto;
+  }
+}
