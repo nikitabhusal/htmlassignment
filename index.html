@@ -17,7 +17,7 @@
 
 <body>
   <div class="c-sidebar">
-    <div class="sidenav">
+    <div class="sidenav-hide" id="sidenav">
       <ul class="home mb-4 ml-4">
         <li class="font-weight-bold"><a class="pr-1" href="#">LELA</a></li>
         <li><a class="pr-0 pl-0" href="#">|</a></li>
@@ -43,7 +43,7 @@
 
     </div>
   </div>
-  <div class="c-wrapper container">
+  <div class="container" id="main">
     <div class="main">
       <header class="c-header">
         <nav class="navbar navbar-inverse pl-0 mr-auto ml-auto">
@@ -70,7 +70,32 @@
               </li>
           </div>
         </nav>
-        <nav class="row navbar align-self-center navbar-light w-100 mr-auto ml-auto">
+        <script>
+          var navbar= false;
+          function hideShowNav() {
+            var v = document.getElementById("nav-btn");
+            var nav = document.getElementById('sidenav')
+            var main = document.getElementById('main')
+            if(navbar){
+            v.classList.remove('fa-angle-left');
+            nav.classList.remove('sidenav');
+            main.classList.remove('c-wrapper')
+              v.classList.add("fa-angle-right");
+              nav.classList.add('sidenav-hide')
+            }
+          else{
+            nav.classList.remove('sidenav-hide')
+            v.classList.remove("fa-angle-right");
+            v.classList.add('fa-angle-left');
+            nav.classList.add('sidenav');
+            main.classList.add('c-wrapper')
+          }
+          navbar= !navbar          
+        }
+        </script>
+        <nav class="row navbar align-self-center justify-content-betweennavbar-light w-100 mr-auto ml-auto">
+          <div class="col col-sm-1 navbar-icon fa fa-angle-right" onclick="hideShowNav()" id="nav-btn">
+          </div>
           <div class="col col-sm-1 navbar-brand">
             <tr class="row row-cols-2">
               <td class="col">
@@ -92,11 +117,11 @@
             <br>
             <p class="font-weight-bold">HVAC</p>
           </div>
-          <div class="col navbar-brand header-icons">
+          <div class="col col-sm-3 navbar-brand header-icons">
             <h2>PACKAGES</h2>
           </div>
-          <form class="form-inline">
-            <div class="input-group mb-3 mr-3">
+          <form class="form-inline justify-content-end col-lg-7">
+            <div class="input-group col-sm-5 mb-3 mr-3">
               <input type="text" class="form-control border-right-0" placeholder="Search" aria-label="Search"
                 aria-describedby="basic-addon2">
               <div class="input-group-append">
@@ -105,7 +130,7 @@
                   </button></div>
               </div>
             </div>
-            <div class="input-group mb-3 mr-3">
+            <div class="input-group col-sm-5 mb-3 mr-3">
               <input type="text" class="form-control border-right-0" value="05 May 2021"
                 aria-describedby="basic-addon2">
               <div class="input-group-append">
