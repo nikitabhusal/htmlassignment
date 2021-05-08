@@ -71,57 +71,59 @@
           </div>
         </nav>
         <script>
-          var navbar= false;
+          var navbar = false;
           function hideShowNav() {
             var v = document.getElementById("nav-btn");
             var nav = document.getElementById('sidenav')
             var main = document.getElementById('main')
-            if(navbar){
-            v.classList.remove('fa-angle-left');
-            nav.classList.remove('sidenav');
-            main.classList.remove('c-wrapper')
+            if (navbar) {
+              v.classList.remove('fa-angle-left');
+              nav.classList.remove('sidenav');
+              main.classList.remove('c-wrapper')
               v.classList.add("fa-angle-right");
               nav.classList.add('sidenav-hide')
             }
-          else{
-            nav.classList.remove('sidenav-hide')
-            v.classList.remove("fa-angle-right");
-            v.classList.add('fa-angle-left');
-            nav.classList.add('sidenav');
-            main.classList.add('c-wrapper')
+            else {
+              nav.classList.remove('sidenav-hide')
+              v.classList.remove("fa-angle-right");
+              v.classList.add('fa-angle-left');
+              nav.classList.add('sidenav');
+              main.classList.add('c-wrapper')
+            }
+            navbar = !navbar
           }
-          navbar= !navbar          
-        }
         </script>
-        <div class="d-flex flex-row navbar navbar mb-3 pl-0">
+        <div class="d-flex flex-row navbar navbar mb-0 pl-0">
           <div class="col-sm-6 d-flex align-items-center pl-0">
-           <div class=" p-2  navbar-icon fa fa-angle-right" onclick="hideShowNav()" id="nav-btn">
+            <div class=" p-2  navbar-icon fa fa-angle-right" onclick="hideShowNav()" id="nav-btn">
+            </div>
+            <div class="p-2 h4 mb-0 pb-0">
+              <tr class="row row-cols-2">
+                <td class="col">
+                  <i class="fas fa-water"></i>
+                </td>
+                <td class="col">
+                  <i class="fas fa-star-of-life"></i>
+                </td>
+              </tr>
+              <br>
+              <tr class="row row-cols-2">
+                <td class="col">
+                  <i class="fas fa-fire"></i>
+                </td>
+                <td class="col">
+                  <i class="fas fa-arrows-alt"></i>
+                </td>
+              </tr>
+              <br>
+              <p class="font-weight-bold mb-0">HVAC</p>
+            </div>
+            <div class="p-2 ">
+              <div class=" navbar-brand header-icons">
+                <h2>PACKAGES</h2>
+              </div>
+            </div>
           </div>
-          <div class="p-2 h4 mt-3">
-            <tr class="row row-cols-2">
-              <td class="col">
-                <i class="fas fa-water"></i>
-              </td>
-              <td class="col">
-                <i class="fas fa-star-of-life"></i>
-              </td>
-            </tr>
-            <br>
-            <tr class="row row-cols-2">
-              <td class="col">
-                <i class="fas fa-fire"></i>
-              </td>
-              <td class="col">
-                <i class="fas fa-arrows-alt"></i>
-              </td>
-            </tr>
-            <br>
-            <p class="font-weight-bold">HVAC</p>
-          </div>
-          <div class="p-2 ">  <div class=" navbar-brand header-icons">
-            <h2>PACKAGES</h2>
-          </div></div>
-        </div>
           <form class="form-inline col-sm-6 pr-0">
             <div class="input-group w-50 mb-3 mr-0 pr-2">
               <input type="text" class="form-control border-right-0" placeholder="Search" aria-label="Search"
