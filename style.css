@@ -1,11 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Quicksand&display=swap");
 
 .quickfont {
-  font-family: 'Quicksand', sans-serif;
+  font-family: "Quicksand", sans-serif;
 }
 
 body {
-  font-family: 'Quicksand', sans-serif;
+  font-family: "Quicksand", sans-serif;
 }
 
 .main {
@@ -61,7 +61,7 @@ li a {
 @import url("https://fonts.googleapis.com/css?family=Raleway:400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Roboto+Condensed:400,400i,700,700i");
 
 section {
-  padding: 100px 0;
+  padding-bottom: 100px;
 }
 
 tails-card {
@@ -197,9 +197,9 @@ a.btn-card {
   padding-top: 20px;
 }
 
-.sidenav-hide{
+.sidenav-hide {
   width: 0px;
-display: none;
+  display: none;
 }
 
 .sidenav a {
