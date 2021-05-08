@@ -93,10 +93,11 @@
           navbar= !navbar          
         }
         </script>
-        <div class="d-flex flex-row navbar mb-3">
-          <div class="p-2 "> <div class="navbar-icon fa fa-angle-right" onclick="hideShowNav()" id="nav-btn">
-          </div></div>
-          <div class="p-2 "><div class="navbar-brand">
+        <div class="d-flex flex-row navbar navbar mb-3 pl-0">
+          <div class="col-sm-6 d-flex align-items-center pl-0">
+           <div class=" p-2  navbar-icon fa fa-angle-right" onclick="hideShowNav()" id="nav-btn">
+          </div>
+          <div class="p-2 h4 mt-3">
             <tr class="row row-cols-2">
               <td class="col">
                 <i class="fas fa-water"></i>
@@ -116,11 +117,12 @@
             </tr>
             <br>
             <p class="font-weight-bold">HVAC</p>
-          </div></div>
+          </div>
           <div class="p-2 ">  <div class=" navbar-brand header-icons">
             <h2>PACKAGES</h2>
           </div></div>
-          <form class="form-inline justify-content-end  pr-0">
+        </div>
+          <form class="form-inline justify-content-end  col-sm-6 pr-0">
             <div class="input-group col-sm-5 mb-3 mr-0 pr-0">
               <input type="text" class="form-control border-right-0" placeholder="Search" aria-label="Search"
                 aria-describedby="basic-addon2">
