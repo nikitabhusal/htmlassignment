@@ -18,12 +18,15 @@
 <body>
   <div class="c-sidebar">
     <div class="sidenav-hide" id="sidenav">
-      <ul class="home mb-4 ml-4">
-        <li class="font-weight-bold"><a class="pr-1" href="#">LELA</a></li>
+      <ul class="home mb-2 ml-3">
+        <li class="font-weight-bold"><a href="#">LELA</a></li>
         <li><a class="pr-0 pl-0" href="#">|</a></li>
         <li class="font-weight-bold"><a class="pl-1" href="#">HOME</a></li>
+        <li class=" float-right d-lg-none">
+          <button class="p-2 fa fa-angle-right btn navbar-icon  border-0"  onclick="hideShowNav()" id="nav-btn"></button>
+        </li>
       </ul>
-      <div class="links ml-1">
+      <div class="links ml-3">
         <ul>
           <li><a href="#">Dashboard</a></li>
           <li><a href="#">My Orders</a></li>
@@ -34,7 +37,7 @@
       </div>
       <div class="services border border-right-0 border-left-0 border-bottom-0">
         <p class="service ml-3 mt-3">Other Services</p>
-        <ul>
+        <ul class="ml-3">
           <li class="pt-1 w-100"><a href="#">Insurance</a></li>
           <li class="pt-1 w-100"><a href="#">Security</a></li>
           <li class="pt-1 w-100"><a href="#">Utility</a></li>
@@ -46,8 +49,8 @@
   <div class="container" id="main">
     <div class="main">
       <header class="c-header">
-        <nav class="navbar navbar-inverse pl-0 mr-auto ml-auto">
-          <div class="container-fluid pl-0">
+        <nav class="navbar navbar-inverse  mr-auto ml-auto">
+          <div class="container-fluid ">
             <ul>
               <li class="font-weight-bold"><a href="#">How it works?</a></li>
               <li class="font-weight-bold"><a href="#">Packages</a></li>
@@ -79,7 +82,7 @@
             if (navbar) {
               v.classList.remove('fa-angle-left');
               nav.classList.remove('sidenav');
-              main.classList.remove('c-wrapper')
+              // main.classList.remove('c-wrapper')
               v.classList.add("fa-angle-right");
               nav.classList.add('sidenav-hide')
             }
@@ -88,13 +91,13 @@
               v.classList.remove("fa-angle-right");
               v.classList.add('fa-angle-left');
               nav.classList.add('sidenav');
-              main.classList.add('c-wrapper')
+              // main.classList.add('c-wrapper')
             }
             navbar = !navbar
           }
         </script>
-        <div class="d-flex flex-row navbar navbar mb-0 pl-0">
-          <div class="col-sm-6 d-flex align-items-center pl-0">
+        <div class="d-flex flex-row navbar navbar mb-0 ">
+          <div class="col-sm-6 d-flex align-items-center ">
             <div class=" p-2  navbar-icon fa fa-angle-right" onclick="hideShowNav()" id="nav-btn">
             </div>
             <div class="p-2 h4 mb-0 pb-0">
@@ -124,7 +127,7 @@
               </div>
             </div>
           </div>
-          <form class="form-inline col-sm-6 pr-0">
+          <form class="form-inline col-sm-6">
             <div class="input-group w-50 mb-3 mr-0 pr-2">
               <input type="text" class="form-control border-right-0" placeholder="Search" aria-label="Search"
                 aria-describedby="basic-addon2">

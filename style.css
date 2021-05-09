@@ -10,7 +10,7 @@ body {
 
 .main {
   width: 100%;
-  max-width: 1070px;
+  max-width: 850px;
   margin: 0 auto;
 }
 
@@ -75,42 +75,13 @@ tails-card {
   height: 100%;
 }
 
-.card-img {
-  position: relative;
+.card-img  img{
   overflow: hidden;
-  border-radius: 0;
-  z-index: 1;
-  height: 200px;
-}
-
-.card-img img {
+  position: relative;
   width: 100%;
-  height: 100%;
-  display: block;
+  max-height: 150px;
 }
 
-.card-img span {
-  position: absolute;
-  top: 15%;
-  left: 12%;
-  background: #1abc9c;
-  padding: 6px;
-  color: #fff;
-  font-size: 12px;
-  border-radius: 4px;
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-  -ms-border-radius: 4px;
-  -o-border-radius: 4px;
-  transform: translate(-50%, -50%);
-}
-
-.card-img span h4 {
-  font-size: 12px;
-  margin: 0;
-  padding: 10px 5px;
-  line-height: 0;
-}
 
 .card-body {
   padding: 1.25rem;
@@ -187,13 +158,13 @@ a.btn-card {
 
 .sidenav {
   height: 100%;
-  width: 180px;
+  width: 195px;
   position: fixed;
-  z-index: 1;
+  z-index: 5;
   top: 0;
   left: 0;
   background-color: #283361;
-  overflow-x: hidden;
+  overflow: hidden;
   padding-top: 20px;
 }
 
@@ -203,6 +174,7 @@ a.btn-card {
 }
 
 .sidenav a {
+  float: left;
   padding: 6px 8px 6px 16px;
   text-decoration: none;
   font-size: 14px;
@@ -244,17 +216,22 @@ a.btn-card {
 }
 
 .links {
-  margin-top: 25%;
+  margin-top: 15%;
   margin-bottom: 15%;
 }
 
+.links li {
+  width:  100%;
+}
+
 .c-wrapper {
-  margin-left: 180px;
+  margin: 0 200px;
   width: auto;
 }
 
 .service {
   font-size: 20px;
+  padding-left: 16px;
   color: #717c9b;
 }
 
@@ -279,6 +256,15 @@ a.btn-card {
 .home li {
   padding: 0;
   margin: 0;
+}
+
+.home li a{
+  letter-spacing: 2px;
+  display: inline-block;
+  font-size: 20px;
+  transform: scaleY(0.7);
+  transform-origin: 0 0;
+  margin-bottom: -50%;
 }
 
 .home li:nth-child(3) a {
@@ -310,4 +296,8 @@ a.btn-card {
   margin-right: -50px; */
   font-size: 40px;
   cursor: pointer;
+}
+
+.c-main {
+  padding: .5rem 1rem;
 }
