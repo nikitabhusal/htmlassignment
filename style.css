@@ -261,8 +261,12 @@ a.btn-card {
 .nav-icons a {
   color: #ffd11a;
   font-size: 25px;
+  text-decoration: none;
+  cursor: pointer;
 }
-
+.nav-icons a:hover {
+  color: #ff9900;
+}
 .navbar-nav i:hover {
   color: #e68a00;
 }
@@ -305,4 +309,5 @@ a.btn-card {
   /* margin-left: -30px;
   margin-right: -50px; */
   font-size: 40px;
+  cursor: pointer;
 }
