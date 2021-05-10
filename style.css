@@ -42,7 +42,13 @@ li a {
   color: #ffd11a;
   font-weight: bold;
 }
-
+.header-icons a {
+  text-decoration: none;
+}
+.btn:focus {
+  outline: none;
+  box-shadow: none;
+}
 .icons {
   margin-top: -14px;
 }
@@ -50,7 +56,6 @@ li a {
 .icons i {
   width: 15px;
 }
-
 .input-group {
   width: 100%;
 }
@@ -189,18 +194,17 @@ a.btn-card {
 
 .services ul {
   display: block;
-  list-style-type: disc;
+  list-style-type: "-";
   margin-block-start: 1em;
   margin-block-end: 1em;
   margin-inline-start: 0px;
   margin-inline-end: 0px;
   padding-inline-start: 40px;
-  list-style-position: outside;
+  list-style-position: center;
 }
 
 .services ul li::marker {
   color: #b3b3ff;
-  content: "-";
 }
 
 .services a {
