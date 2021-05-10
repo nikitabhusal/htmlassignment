@@ -26,6 +26,7 @@ ul {
 
 li {
   float: left;
+  text-decoration: none;
 }
 
 li a {
@@ -61,7 +62,6 @@ li a {
 /* card details start  */
 @import url("https://fonts.googleapis.com/css?family=Raleway:400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Roboto+Condensed:400,400i,700,700i");
 
-
 tails-card {
   background: #ecf0f1;
 }
@@ -73,13 +73,12 @@ tails-card {
   height: 100%;
 }
 
-.card-img  img{
+.card-img img {
   overflow: hidden;
   position: relative;
   width: 100%;
   height: 150px;
 }
-
 
 .card-body {
   padding: 1.25rem;
@@ -201,6 +200,7 @@ a.btn-card {
 
 .services ul li::marker {
   color: #b3b3ff;
+  content: "-";
 }
 
 .services a {
@@ -219,7 +219,7 @@ a.btn-card {
 }
 
 .links li {
-  width:  100%;
+  width: 100%;
 }
 
 .c-wrapper {
@@ -255,7 +255,7 @@ a.btn-card {
   margin: 0;
 }
 
-.home li a{
+.home li a {
   letter-spacing: 2px;
   display: inline-block;
   font-size: 20px;
@@ -295,7 +295,6 @@ a.btn-card {
   cursor: pointer;
 }
 
-.c-main 
-.c-footer {
-  padding: .5rem 1rem;
+.c-main .c-footer {
+  padding: 0.5rem 1rem;
 }
